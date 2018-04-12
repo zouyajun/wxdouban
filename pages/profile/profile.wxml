@@ -1,0 +1,13 @@
+<view class="container"> 
+  <view class="user-info">
+    <image src="{{userInfo.avatarUrl}}"></image>
+    <text>{{userInfo.nickName}}</text>
+  </view>
+  <block wx:if="{{lock}}">
+    <view class="my-wallet_tapbar" bindtap="myWalletAction">
+      <text class="wallet-left">历史观看记录</text>
+      <image src="../../images/arrowright.png" mode="aspectFill"></image>
+    </view>
+  </block>
+  <button bindtap="loginAction" class="login-btn" hover-class="gray" type="{{bType}}">{{actionText}}</button>
+</view> 

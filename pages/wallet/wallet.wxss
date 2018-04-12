@@ -1,0 +1,72 @@
+
+ .my-wallet {
+  background-color: #fff;
+} 
+.my-wallet .first-section {
+  padding: 30rpx 0;
+  text-align: center;
+}
+.my-wallet .second-section {
+  text-align: center;
+}
+.my-wallet .three-section {
+  padding: 30rpx 0;
+  text-align: center;
+}
+.my-wallet .three-section button {
+  width: 230rpx;
+  font-size: 30rpx;
+  
+  background-color: #fff;
+  border-radius: 50rpx;
+	border: 1px solid #666;
+}
+.my-wallet .second-section text {
+  font-size: 100rpx;
+   font-weight: 700; 
+}
+
+.charge-button {
+  padding: 20rpx 20rpx;
+}
+.charge-button button {
+  background-color: greenyellow;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+ .my-ticket{
+   display: flex;
+  padding: 10rpx 0 0 0; 
+} 
+.c-a {
+  flex: 1;
+  /* width: 80%; */
+   padding: 30rpx 45rpx; 
+  font-size: 30rpx;
+  background-color: #eee;
+  
+}
+.c-g {
+  padding: 30rpx 45rpx; 
+  font-size: 30rpx;
+  background-color: #eee;
+}
+.my-deposit {
+   display: flex;
+  padding: 10rpx 0 0 0; 
+}
+.c-b {
+   flex: 1;
+   padding: 30rpx 45rpx; 
+   font-size: 30rpx;
+   background-color: #999;
+}
+.c-y {
+ padding: 30rpx 45rpx; 
+  font-size: 30rpx;
+   background-color: #999;
+}
+
+
+

@@ -1,0 +1,32 @@
+  <view class="container">
+  <view class="slide">
+    <swiper catchtap="onItemClick" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+     <swiper-item wx:for="{{boards}}" wx:for-index="{{index}}">
+      <image src="{{item.img}}" data-postId="{{item.id}}" mode="widthFix"></image>
+    </swiper-item> 
+    </swiper>
+  </view>
+  <view class="board" scroll-y="true">
+    <block wx:for="{{ boardItems }}" wx:key="key">
+      <view class="board-item">
+        <navigator url="../list/list?type={{item.key}}&title={{item.title}}" hover-class="none">
+          <view class="title">
+            <text>{{item.title}}</text>
+            <image src="../../images/arrowright.png" mode="aspectFill"></image>
+          </view>
+        </navigator>
+        <scroll-view class="content" scroll-x="true">
+          <view class="inner">
+            <navigator wx:for="{{ movies }}" wx:key="id" url="../item/item?id={{item.id}}">
+              <view class="movie-item">
+                <image src="{{item.images.large}}" mode="aspectFill"></image>
+                <text>{{item.title}}</text>
+              </view>
+            </navigator>
+          </view>
+        </scroll-view>
+      </view>
+    </block>
+  </view>
+</view>  
+

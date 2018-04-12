@@ -1,0 +1,41 @@
+<view class="search-bar">
+  <!-- 输入框 -->
+  <view class="search-bar_box">
+    <!-- 搜索icon -->
+    <icon class="icon-search" type="search" size="20"></icon>
+    <!-- 搜索输入框 -->
+    <input class="search_bar_input" placeholder="请输入关键字" value="{{wxSearchData.value}}" bindinput="wxSearchInput" bindconfirm="wxSearchConfirm"></input>
+    <!-- 搜索内容清除按钮 -->
+    <view class="search-bar_clear" wx:if="{{wxSearchData.value.length > 0}}" bindtap="wxSearchClear">
+      <!-- 清除icon -->
+      <icon type="clear" size="16"></icon>
+    </view>
+  </view>
+   
+  <!-- 搜索、取消按钮 -->
+  <view class="search-bar_cancel-btn" bindtap="wxSearchConfirm">
+      <text wx:if="{{wxSearchData.value.length > 0}}" data-key='search'>搜索</text>
+      <text wx:else data-key='back'>返回</text>   
+  </view>
+</view>
+
+
+<!-- 列表 -->
+<navigator wx:for="{{ searchItemList }}" url="../item/item?id={{item.id}}&type={{type}}">
+    <view class="movie-item">
+      <image class="poster" src="{{item.images.large}}"></image>
+      <view class="meta">
+        <text class="title">{{item.title}}</text>
+        <text class="sub-title">{{item.original_title}} ({{item.year}})</text>
+        <view class="artists">导演：<block wx:for="{{item.directors}}" wx:key="id">{{item.name}}</block></view>
+      </view>
+      <view class="rating">
+          <text>{{item.rating.average}}</text>
+      </view>      
+    </view>
+  </navigator>
+  <!-- loading部分 -->
+  <view class="bottom-view">
+        <view class="loading" hidden="{{!hasMore}}">正在载入更多...</view>
+        <view class="loading-complete" wx:if="{{!hasMore && searchItemList.length}}">没有更多了...</view>
+   </view>

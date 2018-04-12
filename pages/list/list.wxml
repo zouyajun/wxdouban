@@ -1,0 +1,20 @@
+
+  <navigator wx:for="{{ movies }}" url="../item/item?id={{item.id}}&type={{type}}">
+    <view class="movie-item">
+      <image class="poster" src="{{item.images.large}}"></image>
+      <view class="meta">
+        <text class="title">{{item.title}}</text>
+        <text class="sub-title">{{item.original_title}} ({{item.year}})</text>
+        <view class="artists">导演：<block wx:for="{{item.directors}}" wx:key="id">{{item.name}}</block></view>
+      </view>
+      <view class="rating">
+          <text>{{item.rating.average}}</text>
+      </view>      
+    </view>
+  </navigator>
+  <!-- loading部分 -->
+  <view class="bottom-view">
+        <view class="loading" hidden="{{!hasMore}}">正在载入更多...</view>
+        <view class="loading-complete" hidden="{{hasMore}}">没有更多了...</view>
+   </view>
+

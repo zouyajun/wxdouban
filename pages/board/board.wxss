@@ -1,0 +1,65 @@
+.slide swiper {
+  height: 480rpx;
+}
+.slide swiper image {
+  width: 100%;
+  height: 100%;
+}
+.board {
+  background-color: #f8f9fb;
+  box-sizing: border-box;
+}
+
+.board-item {
+  display: flex;
+  flex-direction: column; 
+  cursor: pointer;
+  font-size: 40rpx;
+  margin: 40rpx 0;
+  padding: 20rpx;
+  background-color: #fff;
+}
+.board-item .title {
+  display: flex;
+  margin: 10rpx;
+  width: 100%;
+}
+.board-item .title text {
+  /* 充满剩余空间的位置 */
+  flex: 1;
+}
+.board-item .title image {
+  height: 35rpx;
+  width: 35rpx;
+}
+
+.board-item .content {
+  height: 300rpx;
+}
+.board-item .content .inner {
+  display: flex;
+  flex-direction: row;
+  height: 300rpx;
+  width: 900rpx;
+}
+.board-item .content .inner .movie-item {
+  display: flex;
+  flex-direction: column;
+  width: 180rpx;
+  margin: 10rpx;
+}
+.board .content .inner .movie-item image {
+  width: 180rpx;
+  height: 250rpx;
+  margin-bottom: 10rpx;
+}
+.board .content .inner .movie-item text {
+  text-align: center;
+  font-size: 25rpx;
+  /* 内容会被修剪，并且其余内容是不可见的 */
+  overflow: hidden;
+  /* 规定文本不进行换行 */
+  white-space: nowrap;
+  /* 显示省略符号来代表被修剪的文本 */
+  text-overflow: ellipsis;   
+}

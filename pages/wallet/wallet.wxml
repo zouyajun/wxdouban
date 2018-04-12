@@ -1,0 +1,24 @@
+<view class="my-wallet">
+  <view class="first-section">
+    <text>我的余额（元）</text>
+  </view>
+  <view class="second-section">
+    <text>100</text>
+  </view>
+  <view class="three-section">
+    <button>余额说明</button>
+  </view>
+</view>
+
+  <view class="charge-button" bindtap="chargeAction">
+    <button>充值</button>
+  </view>
+
+  <view bindtap="showTicket" class="my-ticket">
+      <text class="c-a">我的用车券</text>
+      <text class="c-g">{{ticket}}张<text> ></text></text>
+  </view>
+  <view bindtap="showDeposit" class="my-deposit">
+      <text class="c-b">我的押金</text>
+      <text class="c-y">99元，押金退款<text> ></text></text>
+  </view>

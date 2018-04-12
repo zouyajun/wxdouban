@@ -1,0 +1,47 @@
+.container {
+  height: 1110rpx;  
+  background-color: #eee;
+}
+.user-info {
+  background-color: #fff;  
+  height:400rpx;
+  padding-top: 60rpx;
+}
+.user-info image {
+  display: block;
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  /* margin外边距，上 左 下 右 （表示外边距下边40rpx） */
+  margin: 0 auto 40rpx; 
+  box-shadow: 0 0 20rpx rgba(0, 0, 0, .2);
+}
+.user-info text {
+  display: block;
+  text-align: center;
+  padding: 30rpx 0;
+  margin-bottom: 30rpx;
+}
+.login-btn {
+  position: absolute;
+  width: 90%;
+  bottom: 60rpx;
+  left: 50%;
+  margin-left: -45%;
+}
+
+.my-wallet_tapbar {
+  margin-top: 60rpx;
+  height: 100rpx;
+  display: flex;
+  background-color: white
+}
+ .my-wallet_tapbar .wallet-left {
+  padding: 30rpx 40rpx;
+  flex: 1;
+}
+.my-wallet_tapbar image {
+  height: 35rpx;
+  width: 35rpx;
+  padding: 40rpx 40rpx;
+} 

@@ -1,0 +1,110 @@
+.search-bar {
+  height: 88rpx;
+  width: 100%;
+  background-color: #efeff4;
+  display: flex;
+  flex-direction: row;
+}
+
+.search-bar .search-bar_box {
+  display: flex;
+  flex-direction: row;
+  border: 1rpx solid #eee;
+  border-radius: 10rpx;
+  margin: 10rpx;
+  background-color: #fff;
+  width: 80%;   
+  position: relative; 
+}
+
+.icon-search {
+  margin: 15rpx 20rpx;
+}
+.search_bar_input {
+  width: 75%;
+  margin: 5rpx 0; 
+  /* line-height: 28rpx */
+}
+.search-bar_clear {
+  margin-left: 10rpx;
+  margin-top: 8rpx;
+  flex: 1;
+  right: 10rpx;
+  top: 0;
+   position: absolute; 
+}
+.search-bar .search-bar_cancel-btn {
+  flex: 1;  
+  width: 20%;
+  text-align: center;
+  margin: 15rpx 0;
+  color: #09bb07;
+  white-space: nowrap;
+}
+
+/* 内边距会撑大盒子（padding） */
+
+/*（水平方向） 继承的盒子如果左右内边距的不大于父盒子的宽，父盒子不会被撑大 */
+
+/* 垂直方向外边距塌陷 */
+/* 解决方法：给父盒子设置边框 border: 1rpx solid: #eee */
+/* 方法二：给父盒子设置overflow:hidden ()*/
+
+
+
+/*********************************列表样式***********************/
+.movie-item {
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #eee;
+  cursor: pointer;
+} 
+
+.movie-item .poster {
+  margin-right: 20rpx;
+  width: 128rpx;
+  height: 168rpx;
+}
+.movie-item .meta {
+  flex: 1;
+}
+.movie-item .meta .title ,
+.movie-item .meta .sub-title{
+   display: block; 
+   margin-bottom: 15rpx;
+}
+.movie-item .meta .title {
+  font-size: 32rpx;
+}
+.movie-item .meta .sub-title {
+  font-size: 28rpx;
+  color: #999;
+}
+.movie-item .meta .artists {
+  font-size: 30rpx;
+  color: #666;
+}
+.movie-item .rating text {
+  flex: 1;
+  display: inline-block;
+  width: 40rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  text-align: center;
+  background-color: red;
+  color: #fff;
+  border-radius: 20rpx;
+  padding: 10rpx;
+}
+
+.bottom-view .loading {
+  text-align: center;
+  margin: 40rpx 0;
+  color: #999
+}
+.bottom-view .loading-complete {
+  text-align: center;
+  margin: 40rpx 0;
+  color: #999
+}

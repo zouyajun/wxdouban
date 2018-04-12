@@ -1,0 +1,55 @@
+ .movie-item {
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #eee;
+  cursor: pointer;
+} 
+
+.movie-item .poster {
+  margin-right: 20rpx;
+  width: 128rpx;
+  height: 168rpx;
+}
+.movie-item .meta {
+  flex: 1;
+}
+.movie-item .meta .title ,
+.movie-item .meta .sub-title{
+   display: block; 
+   margin-bottom: 15rpx;
+}
+.movie-item .meta .title {
+  font-size: 32rpx;
+}
+.movie-item .meta .sub-title {
+  font-size: 28rpx;
+  color: #999;
+}
+.movie-item .meta .artists {
+  font-size: 30rpx;
+  color: #666;
+}
+.movie-item .rating text {
+  flex: 1;
+  display: inline-block;
+  width: 40rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  text-align: center;
+  background-color: red;
+  color: #fff;
+  border-radius: 20rpx;
+  padding: 10rpx;
+}
+
+.bottom-view .loading {
+  text-align: center;
+  margin: 40rpx 0;
+  color: #999
+}
+.bottom-view .loading-complete {
+  text-align: center;
+  margin: 40rpx 0;
+  color: #999
+}
