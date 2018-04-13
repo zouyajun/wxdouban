@@ -1,0 +1,26 @@
+<view class="content">
+
+  <image src="../../images/login_logo@2x.png" class="logo"></image>
+  <view class="account">
+    <!-- <view class="title">账号</view> -->
+    <image src="../../images/userlogo.png" class="logo-image"></image>
+    <view class="num"><input bindinput="accountInput" placeholder="请输入账号" placeholder-style="color:#999999;"></input></view>
+  </view>
+  <view class="hr"></view>
+
+   <view class="account">
+    <!-- <view class="title">密码</view>  -->
+    <image src="../../images/passwordlogo.png" class="logo-image"></image>
+    <view class="num"><input bindinput="pwdInput" type="password" placeholder="请输入密码" placeholder-style="color:#999999;"></input></view>
+  </view>
+  <view class="hr"></view> 
+
+  <view class="login-view">
+    <button bindtap="loginAction" class="login-btn" hover-class="hightLight">登录</button>
+  </view>
+
+  <view class="operate">
+    <view class="register"><navigator url=""></navigator>注册</view>
+    <view class="forgetpwd"><navigator url=""></navigator>忘记密码？</view>
+  </view>
+</view>
