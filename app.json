@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/splash/splash",
     "pages/login/login",
     "pages/board/board",
     "pages/search/search",

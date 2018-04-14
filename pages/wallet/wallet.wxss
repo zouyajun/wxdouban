@@ -44,13 +44,13 @@
   /* width: 80%; */
    padding: 30rpx 45rpx; 
   font-size: 30rpx;
-  background-color: #eee;
+  background-color: #ffffff;
   
 }
 .c-g {
   padding: 30rpx 45rpx; 
   font-size: 30rpx;
-  background-color: #eee;
+  background-color: #ffffff;
 }
 .my-deposit {
    display: flex;
@@ -60,12 +60,12 @@
    flex: 1;
    padding: 30rpx 45rpx; 
    font-size: 30rpx;
-   background-color: #999;
+   background-color: #ffffff;
 }
 .c-y {
  padding: 30rpx 45rpx; 
   font-size: 30rpx;
-   background-color: #999;
+   background-color: #ffffff;
 }
 
 

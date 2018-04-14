@@ -1,7 +1,7 @@
 
 var utilMd5 = require('../../utils/md5.js');
 Page({
-
+  
   /**
    * 页面的初始数据
    */
@@ -63,7 +63,7 @@ Page({
         DeviceType: _that.data.deviceType,
         DeviceToken:'cbca7c4ed218682e876ba261c33b048dc745fe0d93f3c7a594a9b09768ddbdef',
         RegistrationId:'',
-        ResolutionSize:'',
+        ResolutionSize:'750*1334',
       },
       header: {
         // 'User-Agent':'APP_Clinic_iOS_3.10',
@@ -137,6 +137,7 @@ Page({
       },
     })
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -193,4 +194,7 @@ Page({
   onShareAppMessage: function () {
     
   }
+
 })
+
+

@@ -1,0 +1,13 @@
+<view class="container">
+   <swiper class="slide" indicator-dots="true"
+    indicator-color="#999999" indicator-active-color="white">
+     <block wx:for="{{imageUrls}}">
+      <swiper-item>
+          <image src="{{item}}" class="slide-image" mode="aspectFill"></image>
+           <block wx:if="{{index == imageUrls.length - 1}}"> 
+             <button class="start-btn" bindtap="startAction">立即体验</button>
+           </block> 
+      </swiper-item>
+    </block> 
+  </swiper> 
+</view>
