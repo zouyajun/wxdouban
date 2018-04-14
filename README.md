@@ -7,7 +7,7 @@
 基础页面包括：引导页面、登录页面、最新电影推荐轮播图，电影列表、电影详情、搜索、个人中心页面
 
 ### 效果图演示
-![](https://cl.ly/0D2d1g1Q3J2c/download/Screen%20Recording%202018-04-14%20at%2005.26%20%E4%B8%8B%E5%8D%88.gif)
+![](https://github.com/zouyajun/wxdouban/blob/master/images/Screen%20Recording.gif)
   
 
 
